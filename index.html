@@ -1,0 +1,470 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Failda Matcha - Fuel Your Day The Green Way</title>
+<!-- Google Fonts for Editorial Matcha Aesthetic -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              forest: '#0c381e',
+              deepGreen: '#072b16',
+              green: '#2d8b44',
+              bright: '#3ba455',
+              softMint: '#e8f3ea',
+              creamMint: '#f3f8f4',
+              paleGreen: '#f5faf6',
+              dark: '#111812'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles: Visual Accents and Texture -->
+<style data-purpose="base-styling">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #111812;
+      background-color: #1a241c;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #2d8b44;
+      border-radius: 4px;
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" class=""></head>
+<body class="bg-[#121c14] text-slate-800 antialiased selection:bg-[#2d8b44] selection:text-white flex justify-center">
+<!-- Main Website Container wrapping the layout matching the reference proportions -->
+<div class="w-full max-w-[1280px] bg-white shadow-2xl relative min-h-screen overflow-hidden">
+<!-- BEGIN: MainHeader -->
+<header class="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3 group" data-purpose="brand-logo" href="index.html">
+<div class="w-9 h-9 bg-[#0c381e] flex items-center justify-center rounded-sm text-white font-black text-xl tracking-tighter">
+<span class="text-[#48b464] -mr-0.5">F</span>
+</div>
+<div class="flex flex-col">
+<span class="font-extrabold text-lg tracking-wider text-[#0c381e] leading-none uppercase">Failda</span>
+<span class="text-[9px] font-bold tracking-[0.25em] text-gray-400 uppercase">Matcha</span>
+</div>
+</a>
+<!-- Center Navigation Links -->
+<nav class="hidden md:flex items-center space-x-10 text-[13px] font-bold tracking-widest text-[#111812]" data-purpose="navigation-menu">
+<a class="text-[#0c381e] relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-[#0c381e]" href="index.html">HOME</a>
+<a class="text-gray-500 hover:text-[#0c381e] transition-colors" href="products.html">PRODUCT</a>
+<a class="text-gray-500 hover:text-[#0c381e] transition-colors" href="process.html">PROCESS</a>
+<a class="text-gray-500 hover:text-[#0c381e] transition-colors" href="about.html">ABOUT</a><a class="text-gray-500 hover:text-[#0c381e] transition-colors" href="blog.html">BLOG</a>
+</nav>
+<!-- Shop CTA Button -->
+<div class="flex items-center"><div class="flex items-center gap-5 mr-6 text-[#111812]"><button type="button" aria-label="Search" class="text-gray-700 hover:text-[#0c381e] transition-colors p-1 flex items-center justify-center"><span class="material-symbols-outlined text-xl leading-none">search</span></button><button type="button" aria-label="Notifications" class="text-gray-700 hover:text-[#0c381e] transition-colors p-1 relative flex items-center justify-center"><span class="material-symbols-outlined text-xl leading-none">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-[#2d8b44] rounded-full ring-2 ring-white"></span></button><a href="account.html" title="Account / Sign In" class="text-gray-700 hover:text-[#0c381e] transition-colors p-1 flex items-center justify-center"><span class="material-symbols-outlined text-xl leading-none">person</span></a></div>
+<a class="bg-[#0c381e] hover:bg-[#134e2b] text-white text-[12px] font-extrabold tracking-widest py-3 px-7 uppercase transition-all duration-200" href="products.html">
+            SHOP NOW
+          </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative text-white overflow-hidden" data-purpose="hero-banner" id="home">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Artisanal Matcha Preparation on Rustic Wood" class="w-full h-full object-cover object-center filter brightness-[0.45] contrast-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm_wVad65us36svCsA2d65hJGaWfdTZyZ6mOak-V5Dq4FFZz-hT6jl6wjjjigBZ1I3K3tTI1xbZLZ6ytXXegQIaJ54jfWfhSmPqkolVI2tY-kqRYUGBr7mIUpJ_lmGx25QqIQzmYtKdkW9Ja-Jn_eJpn3dO1o5Q8mVlIAKxTjCuNjmalkg8X_gGKv9PUhQduRBL9qgOw6uf7dJgh-5Ul6K9kLICzLRGdx-DNJQJOgXv4RhWR0DC48">
+<div class="absolute inset-0 bg-gradient-to-t from-[#081a10] via-black/40 to-transparent"></div>
+</div>
+<!-- Hero Content Container -->
+<div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-12 pt-28 pb-20 text-center flex flex-col items-center">
+<!-- Origin Badge -->
+<div class="inline-flex items-center px-4 py-1.5 rounded-full border border-emerald-500/40 bg-black/40 backdrop-blur-md mb-6">
+<span class="text-[11px] font-bold tracking-[0.2em] text-[#55cc76] uppercase">AUTENTIK KYOTO</span>
+</div>
+<!-- Main Headline -->
+<h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-[1.08] max-w-4xl mb-6">
+          Fuel Your Day The <br class="hidden sm:inline">Green Way
+        </h1>
+<!-- Subheading Description -->
+<p class="max-w-2xl text-gray-200 text-sm sm:text-base font-normal leading-relaxed mb-8 opacity-90">
+          100% authentic matcha from Kyoto, with no preservatives. Experience a sense of calm with every sip, thanks to premium quality that has been traditionally tested.
+        </p>
+<!-- Hero CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-4 mb-20">
+<a class="bg-[#2d8b44] hover:bg-[#349e4f] text-white text-xs font-bold uppercase tracking-wider py-3.5 px-8 transition-colors" href="products.html">
+            Order Now
+          </a>
+<a class="bg-white hover:bg-gray-100 text-[#0c381e] text-xs font-bold uppercase tracking-wider py-3.5 px-8 transition-colors" href="products.html">
+            See Product
+          </a>
+</div>
+<!-- Lower Hero Callout Badges -->
+<div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-8 border-t border-white/10 text-left text-xs text-gray-300">
+<div class="flex items-center space-x-3">
+<div class="w-2 h-2 rounded-full bg-[#3ba455]"></div>
+<p class="leading-normal max-w-xs font-light">
+              Upgrade Your Daily Routine With Matcha. High Quality Matcha Made For Mindful Living. Shop Now And Taste Pure Matcha.
+            </p>
+</div>
+<div class="flex items-center justify-start md:justify-end space-x-3">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<p class="font-medium tracking-wide text-gray-200">
+              Dago Pakar And Cihapit Kota Bandung
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: FeaturedProducts -->
+<section class="bg-[#e9f2eb] py-20 px-6 lg:px-12" data-purpose="featured-products" id="products">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="text-left mb-12">
+<div class="inline-block bg-white text-[#0c381e] text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 mb-4 shadow-sm">
+            Premium Product
+          </div>
+<h2 class="text-3xl sm:text-5xl font-black text-[#0c381e] uppercase tracking-tight max-w-3xl leading-[1.1]">
+            Standard Perfection And Energy In Every Cup Of Matcha
+          </h2>
+</div>
+<!-- Products 3-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<!-- Product Card 1: Pouch -->
+<div class="bg-white p-5 flex flex-col group transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-[#d9e6dc] overflow-hidden mb-5">
+<img alt="Premium Matcha 100g Pouch" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJaeuY1b05ZFDH4Xzk4-gxkX940lz6Sj8Nrr66xVLGhsr9fGU9p97B3fmG_A0MeNbXiIkMNpykymn1HAQ5dSvoWoWJgxoifYAw0GcvujgVBtrbhkuXsvMnzFV60gVU4HATlBCyYeQhP2567onzrTJ7pR63s75x0Sdph-2Pdi1MvIIP6gfanmJNfE3-EjFBilvQAw6sYY-j5WvFITNB72SyHU95FhvtCQo2Jd_WX85z_1ISPQj6BQE">
+<!-- Simulated Product Label Overlay -->
+<div class="absolute inset-0 flex items-center justify-center p-6 pointer-events-none">
+<div class="bg-white/95 backdrop-blur-sm p-4 w-44 shadow-lg text-center border border-gray-100">
+<div class="text-[10px] font-black tracking-widest text-[#0c381e]">FAILDA</div>
+<div class="text-[8px] text-gray-500 uppercase tracking-widest mt-0.5">Kyoto Uji Matcha</div>
+<div class="my-2 h-[1px] bg-emerald-200 w-8 mx-auto"></div>
+<div class="text-[9px] font-bold text-gray-700">PREMIUM POUCH</div>
+</div>
+</div>
+</div>
+<h3 class="font-extrabold text-sm sm:text-base uppercase tracking-tight text-[#0c381e] mb-2">
+              Premium Matcha 100 Gram
+            </h3>
+<div class="flex items-center justify-between text-xs text-gray-600 mt-auto pt-2 border-t border-gray-100">
+<span class="font-bold text-sm text-gray-900">$50.00</span>
+<span class="text-gray-400 font-medium">$50.00/kg</span>
+</div>
+</div>
+<!-- Product Card 2: Ceremonial Tin -->
+<div class="bg-white p-5 flex flex-col group transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-[#d9e6dc] overflow-hidden mb-5">
+<img alt="Ceremonial Grade Matcha 100g Tin" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Fq8lr-vF7kFLxAmGS2fWcp60E3FiwovJaq6e7CJAXTr2r_lWBwfs6cae0o_ypqUc4sGoIRFl7HbyD-ve4_x44pJCjyKGTAn3wlZGDUeXxWfEiuQ4ayb0R_Gmuow7GnXH7TNPU-xt3lrsQJr9yvXvSG61k4-xf3A3GuQznpBhR3XtldJ9RynGF_ufdT6Y0CHC7q_L2EO1k1PyvDju3qJhEnBmLvTW5kpuisuzKfefvxLo3wk6KJA">
+<!-- Simulated Product Label Overlay -->
+<div class="absolute inset-0 flex items-center justify-center p-6 pointer-events-none">
+<div class="bg-white/95 backdrop-blur-sm p-4 w-44 shadow-lg text-center border border-gray-100">
+<div class="text-[10px] font-black tracking-widest text-[#0c381e]">FAILDA</div>
+<div class="text-[8px] text-gray-500 uppercase tracking-widest mt-0.5">Ceremonial Grade</div>
+<div class="my-2 h-[1px] bg-emerald-200 w-8 mx-auto"></div>
+<div class="text-[9px] font-bold text-emerald-800">FIRST HARVEST</div>
+</div>
+</div>
+</div>
+<h3 class="font-extrabold text-sm sm:text-base uppercase tracking-tight text-[#0c381e] mb-2">
+              Ceremonial Grade Matcha 100 Gram
+            </h3>
+<div class="flex items-center justify-between text-xs text-gray-600 mt-auto pt-2 border-t border-gray-100">
+<span class="font-bold text-sm text-gray-900">$70.00</span>
+<span class="text-gray-400 font-medium">$70.00/kg</span>
+</div>
+</div>
+<!-- Product Card 3: Drink Can -->
+<div class="bg-white p-5 flex flex-col group transition-all duration-300 hover:shadow-xl">
+<div class="relative w-full aspect-[4/5] bg-[#d9e6dc] overflow-hidden mb-5">
+<img alt="Drink Matcha Latte Ready to Drink Can" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsdkJbmcssUpTYxdapuFojepAwiK9kx3iq8sCbuotD2aenmGZqPKT04f4w1T2XU7PkzNHAuEHlbStHQStRgXW_wIUZ8yWPYvxJw30yjBXeumDBeqCvndD_UIBKNL3JCgMBveQcgH7BcwAqT7ppPBzmSsy18kpkrUyNupxnCWnSHmZr5BSDxgzBv2X3oVtb8ldcCXXxmAE1_XVGH9La39PkDIIRxeSSipE3W5EV_iS3HMKR_xckNOw">
+<!-- Simulated Product Label Overlay -->
+<div class="absolute inset-0 flex items-center justify-center p-6 pointer-events-none">
+<div class="bg-white/95 backdrop-blur-sm p-4 w-44 shadow-lg text-center border border-gray-100">
+<div class="text-[10px] font-black tracking-widest text-[#0c381e]">FAILDA</div>
+<div class="text-[8px] text-gray-500 uppercase tracking-widest mt-0.5">Ready To Sip</div>
+<div class="my-2 h-[1px] bg-emerald-200 w-8 mx-auto"></div>
+<div class="text-[9px] font-bold text-gray-700">MATCHA LATTE</div>
+</div>
+</div>
+</div>
+<h3 class="font-extrabold text-sm sm:text-base uppercase tracking-tight text-[#0c381e] mb-2">
+              Drink Matcha Latte
+            </h3>
+<div class="flex items-center justify-between text-xs text-gray-600 mt-auto pt-2 border-t border-gray-100">
+<span class="font-bold text-sm text-gray-900">$15.00</span>
+<span class="text-gray-400 font-medium">$15.00/kg</span>
+</div>
+</div>
+</div>
+<!-- Featured Sub-bar Link -->
+<div class="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-emerald-900/10 text-xs font-bold uppercase tracking-wider text-[#0c381e]">
+<span class="">Just Launched Ceremonial Matcha</span>
+<a class="mt-2 sm:mt-0 flex items-center gap-1.5 hover:text-[#2d8b44] transition-colors" href="index.html">
+            All Product →
+          </a>
+</div>
+</div>
+</section>
+<!-- END: FeaturedProducts -->
+<!-- BEGIN: ProductionProcess -->
+<section class="bg-white py-20 px-6 lg:px-12" data-purpose="matcha-process" id="process">
+<div class="max-w-7xl mx-auto">
+<!-- Section Title -->
+<div class="mb-12">
+<h2 class="text-3xl sm:text-5xl font-black text-[#111812] uppercase tracking-tight">
+            Our Matcha <span class="text-[#2d8b44]">Production</span> Process
+          </h2>
+</div>
+<!-- Top Two Large Feature Images -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="aspect-[16/10] bg-gray-100 overflow-hidden rounded-sm relative group">
+<img alt="Layered Iced Matcha Latte Drink in Clear Glass" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4xV4WNQh6QIeZF8LuN2A_LL_lyjNPKCMbWQVd9yxF2hNPd4ApYEbYAvm7bdPHEgdKMi8MLnW1FZX4E4y3goP8LdkMeYy9_XSl-Eg0n97ZExvgvkhqj9fAeIG_H9bmQr0191ogZwgPnt90ieswILRoTz0qHn0DHPE7d3caO0jiAb2-dT4E7KeZy-hrq3ENFfv6_hiNQUf63o-9LRlU3_-31Vf-g6U8jLfMeGWRCzoyihnSWIRj0FY">
+</div>
+<div class="aspect-[16/10] bg-gray-100 overflow-hidden rounded-sm relative group">
+<img alt="Hot Matcha Latte with Rosetta Foam Art in Ceramic Bowl" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfOnrxGJO_AM4SiecA2urjd5D4Q3SxQxlG8CFUvQVsZrcAN2S9tRa39xWzd0rWB_bSQPR5z-bJ4_wecdAKcX74tnqripG57kBmL8USsz7sRod6qKUaGZzQRN5ebVgtDjP-X29hU8BTLi9nKvnRvJ03Lbm4vhCyCJcGgtZM_lpsDt7ppOOoAJmRo2qp1P2AYoWsCaGERt-ue4zJVYL88leF1czEDO9V_aCyv3fQEDdQsNYy-eWnUxk">
+</div>
+</div>
+<!-- Bottom 4 Editorial Process Steps Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-5 mb-10">
+<!-- Step 1 -->
+<div class="flex flex-col group">
+<div class="aspect-square bg-gray-100 overflow-hidden mb-3">
+<img alt="Scoop of vibrant green matcha powder" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU9M-WQ3s9NU6XeTjdY3npY7LyJABPnmS5FF1uEOwixYuyoSp7yct2ksn6FazOLCPFCo7GrffVI84Tfo9xAjpLJoPEE-WszKk3Upo17a_TQ1cuDL5C7QASwM75UqsCkZDYblQy-2CVtojsn3DoZ7wjIxFOWTzQu4_V_8U6WQNCjL1Vt3FN1WhzxzaLOXaRuCnQ85fgRSOwWAcVNuDuokZm6_yu98o1e-fom74hMx458P1xku63MSM">
+</div>
+<p class="text-xs font-bold text-gray-800 leading-snug">
+              How to prepare smooth and perfect matcha at home
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col group">
+<div class="aspect-square bg-gray-100 overflow-hidden mb-3">
+<img alt="Japanese rolling tea plantation hills" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ8CDftwkh6RCru8MxDQz1wlD5G-4aQs-VHQANE4irw6XuK7l5_N0si6I3R7Odfjl4AGG5EqIt8jInEbxgL-P0LoQDkk4dgI2vjD25TAPF0cY6Vr7iuQ_samG6RMOtdbF4SUeyUJRnsGAGcizpkuwVpta8tyw89Wn0zQCDFzPxw6EIrWrq0lKqIaQy77A5ujNm1qQ3wohf3zEOMD9ndOljtHMjYLGSnwsorWIwy_Nsr1tltKlGfeA">
+</div>
+<p class="text-xs font-bold text-gray-800 leading-snug">
+              Understanding Japan's Matcha Type
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col group">
+<div class="aspect-square bg-gray-100 overflow-hidden mb-3">
+<img alt="Bamboo chasen whisk and matcha bowl kit" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATUl3eAeByk458b7Vph0cuSvsjafxOyQlIC9WbBVaae40HZDZJtvbgFzK37WPuhq026ds0d26LLvZJRYyhCostpRtXV4SKq-i-pUK88rM_PLF0LqazFnHR3IbCFGERy8d--qQhj5vNwn4WfulZyC6xCPFhdKkf7xoCvHqV1EOH_1isJKoDEG0lvB5PfSOw8B4FCnBNENv3y7jgafqOaVs5AZjICUkIMnJK1CSU_nriQw0m5q9gAjY">
+</div>
+<p class="text-xs font-bold text-gray-800 leading-snug">
+              Having all the necessary tools for making matcha
+            </p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col group">
+<div class="aspect-square bg-gray-100 overflow-hidden mb-3">
+<img alt="Iced matcha drink preparation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN3SvJ95LI3Abyc1_uH0IA0zmTdkmEgihLF22DrBw5gKXwFtbJ6yuyGkkTeNRfUYCbLwvJIUeBbQ9aD0Xi_1P2fkOTyJcF_QK7PeTVF8hpBWMEfxptgvLH1RdkHPjFUZT4Tusasf2yI436KY7fq-0CuoQQ9GSjahXF2jMgCgoGUODDYROxl7jlwYp18a_t0PnzRK5zMQs1cArTQEDKeGwwVNZw0knn-VxKCwCKOMJK8WCM2NXwHL0">
+</div>
+<p class="text-xs font-bold text-gray-800 leading-snug">
+              How to properly prepare matcha for a drink
+            </p>
+</div>
+</div>
+<!-- Section Navigation Bar -->
+<div class="flex flex-col sm:flex-row items-center justify-between pt-4 border-t border-gray-200 text-xs font-bold uppercase tracking-wider text-gray-900">
+<span class="">Just Launched Process Make Matcha</span>
+<a class="mt-2 sm:mt-0 flex items-center gap-1.5 hover:text-[#2d8b44] transition-colors" href="index.html">
+            See More →
+          </a>
+</div>
+</div>
+</section>
+<!-- END: ProductionProcess -->
+<!-- BEGIN: Testimonials -->
+<section class="bg-[#09351a] py-20 px-6 lg:px-12 text-white" data-purpose="customer-testimonials">
+<div class="max-w-7xl mx-auto">
+<!-- Title -->
+<div class="mb-12">
+<h2 class="text-3xl sm:text-5xl font-black uppercase tracking-tight">
+<span class="text-[#48b464]">People Of</span> The Ritual
+          </h2>
+</div>
+<!-- 3 Cards Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Testimonial 1 -->
+<div class="bg-white text-gray-900 p-8 flex flex-col justify-between rounded-sm shadow-md">
+<div>
+<!-- Star Rating -->
+<div class="flex space-x-1 text-emerald-600 text-xs mb-6">
+<span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span>
+</div>
+<blockquote class="text-xs sm:text-sm font-semibold leading-relaxed mb-8">
+                “The color is a vibrant green, the texture is creamy, and it's not bitter at all. The best matcha in Indonesia!”
+              </blockquote>
+</div>
+<!-- User Info -->
+<div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+<img alt="Saraswati Putri" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzQTJzty8vooiKx55fKROaxEHok9JdyVOJdqTFvh7UwVsz1qxf6Ie9JTIzMp8M3_AVYOlmDk3zocaamir-K5BgYrdgKCnRrythsQnUYnSJyNw8v_sVpuTa69NG5GdTewXzVFNu404QIUcGUP-miLEt4UzmFagxF-6TE_BvgsFnPWBSX4_uVeGSB5uJV42zfmsOHNQSyo0uFfU5b0yByk_W4IGAtYq8ZHwquj324jxbEK40m80rmp4">
+<div>
+<h4 class="text-xs font-black uppercase tracking-wider text-[#0c381e]">Saraswati Putri</h4>
+<p class="text-[10px] text-gray-400 font-medium">Pecinta Matcha</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white text-gray-900 p-8 flex flex-col justify-between rounded-sm shadow-md">
+<div>
+<!-- Star Rating -->
+<div class="flex space-x-1 text-emerald-600 text-xs mb-6">
+<span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span>
+</div>
+<blockquote class="text-xs sm:text-sm font-semibold leading-relaxed mb-8">
+                “It really helps you stay focused without feeling restless. Recommended for steady daily energy.”
+              </blockquote>
+</div>
+<!-- User Info -->
+<div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+<img alt="Andra Ramadhan" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpGjFoxaxRfGAeY9fZvDlV316I394upmk0rY0tEjo4a35SClAdtYgKCdFaYEhUnSEIv3F3eA-45OG1z1WcECDGe5r-Yb5dE5oI7B_WiuYqL4d6Zbm20Opj6cFw04RWnV1Ph2hxPmEbnx8rPu7pH2WODOODChnJDyDtFyMmzCxE4GsVll8ycaXXqBkIQWAREqXSc6pEGb_62OpaTDO_m7AY5eiLCuol0aPyacgfOINCP-oGE_AKkuE">
+<div>
+<h4 class="text-xs font-black uppercase tracking-wider text-[#0c381e]">Andra Ramadhan</h4>
+<p class="text-[10px] text-gray-400 font-medium">Software Engineer</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white text-gray-900 p-8 flex flex-col justify-between rounded-sm shadow-md">
+<div>
+<!-- Star Rating -->
+<div class="flex space-x-1 text-emerald-600 text-xs mb-6">
+<span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span>
+</div>
+<blockquote class="text-xs sm:text-sm font-semibold leading-relaxed mb-8">
+                “The packaging is top-notch, and the starter kit is high-quality. The craftsmanship is very neat.”
+              </blockquote>
+</div>
+<!-- User Info -->
+<div class="flex items-center space-x-3 pt-4 border-t border-gray-100">
+<img alt="Jessica Tan" class="w-10 h-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPwx811Pr-3ZUbsGC58zfgyVyGdYWpHi6qTOLfQo-SlWFhugoAm3MdeQtY0-1rGe0KTHIIH8X6u5Xx_RuHT6nPDlQW54cg3FT1008LPnjDlsMgtAoK2uIbd_sDS1IPJ_X53NPCEXZcdycTiIYlcJ_WA4FiT1org_2vFJZrNCi7oUljjwurldDTiMhJSOF7U6DOPsWmO-pF-DrvDHHuG3kDjla8l-ejcQtWQL9Fnx4A_D6aRpCWfJA">
+<div>
+<h4 class="text-xs font-black uppercase tracking-wider text-[#0c381e]">Jessica Tan</h4>
+<p class="text-[10px] text-gray-400 font-medium">Content Creator</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Testimonials -->
+<!-- BEGIN: BlogAndJournal -->
+<section class="bg-[#fbf8f5] py-20 px-6 lg:px-12" data-purpose="blog-news-section" id="blog">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<div class="inline-block bg-white text-[#0c381e] text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 mb-4 shadow-sm border border-gray-200/50">
+              Blog &amp; News
+            </div>
+<h2 class="text-3xl sm:text-5xl font-black text-[#0c381e] uppercase tracking-tight max-w-xl leading-[1.1]">
+              Blog And Journal About Matcha
+            </h2>
+</div>
+</div>
+<!-- 2-Card Editorial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Blog Card 1 -->
+<article class="bg-white p-6 border border-gray-200/60 rounded-sm flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+<div>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-2">
+                20 MARET 2026
+              </span>
+<h3 class="text-sm sm:text-base font-extrabold uppercase leading-snug text-[#0c381e] mb-6">
+                Matcha Is Rich In Antioxidants (Especially EGCG), Providing Steady Energy Without Excessive Caffeine.
+              </h3>
+</div>
+<div class="aspect-[16/9] w-full overflow-hidden bg-gray-100">
+<img alt="Matcha latte cup with artistic heart foam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoMfMzt2zK3FKURmqD0gQP3X_m7ms3PmpbeFosgoXqohCdyWrU4u5nyLwnWrRlgjEhVuJ3H3DHg0bzizMxu6UFwt_OlQVvWdUSgIXvsTb25ykYjikvQ9EbwW_VSLSP1Enct67UDHnMMjnpaF9fmuhtd7ke_QEqzO4LsrmjIKVN586OyPooWwLbELrHI1cF4nrCBCwUoNrjtZC2OXLL5wrjIRSXgjyItGcgLd9Ih5JCbkAzSsLJzTM">
+</div>
+</article>
+<!-- Blog Card 2 -->
+<article class="bg-white p-6 border border-gray-200/60 rounded-sm flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+<div>
+<span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest block mb-2">
+                20 MARET 2026
+              </span>
+<h3 class="text-sm sm:text-base font-extrabold uppercase leading-snug text-[#0c381e] mb-6">
+                Drinking Matcha Can Help Lower Bad Cholesterol (LDL) And Blood Pressure, Thereby Reducing The Risk Of Cardiovascular Disease.
+              </h3>
+</div>
+<div class="aspect-[16/9] w-full overflow-hidden bg-gray-100">
+<img alt="Matcha whisk, scoop and ground green tea flatlay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtHa8WbC9PC8LGwMwjjFLr6vO_HGTLdsDw7Baw59LG2FTkHw-SmT9C1jZzRmkjfSjunKpUl0RknjbGdvKVz2fPtb_S2XrHqIpCnbATFwqhOwnc2nAZvIJpXJpLXcSoangn0ymdU7Ovcwca5JOaqEum6Nq5mF1i43_qesawSGUmzyqtM7ybEdT6YgP0yTYQ2o_W8Os9jhYPbBH8KUc-l0iGi4qnYUAWRJwFpWi13zYMlZyCoG1xDd8">
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: BlogAndJournal -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-white border-t border-gray-200/80 pt-16 pb-12 px-6 lg:px-12" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 pb-16">
+<!-- Col 1: Brand Identifier -->
+<div class="col-span-2 md:col-span-1">
+<div class="w-14 h-14 bg-[#0c381e] flex items-center justify-center rounded-sm text-white font-black text-2xl tracking-tighter mb-4">
+<span class="text-[#48b464] -mr-0.5">F</span>
+</div>
+<div class="text-xs text-gray-500 font-medium leading-relaxed">
+              Premium Ceremonial Kyoto Matcha, crafted for your daily energy and mindfulness.
+            </div>
+</div>
+<!-- Col 2: Shop -->
+<div>
+<h4 class="text-xs font-bold text-[#0c381e] uppercase tracking-wider mb-4">Shop</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-medium">
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="products.html">Matcha Powder</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="products.html">Tools Matcha</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="products.html">Gift</a></li>
+</ul>
+</div>
+<!-- Col 3: Discover -->
+<div>
+<h4 class="text-xs font-bold text-[#0c381e] uppercase tracking-wider mb-4">Discover</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-medium">
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="profile.html">Profile</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="about.html">About Us</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="process.html">Ingredients &amp; Scents</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="blog.html">How To Prepare Matcha</a></li>
+</ul>
+</div>
+<!-- Col 4: Support -->
+<div>
+<h4 class="text-xs font-bold text-[#0c381e] uppercase tracking-wider mb-4">Supprot</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-medium">
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="index.html">FAQ</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="index.html">Shopping &amp; Returns</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="index.html">Contact Us</a></li>
+<li class=""><a class="hover:text-[#2d8b44] transition-colors" href="profile.html">Track Your Order</a></li>
+</ul>
+</div>
+<!-- Col 5: Stay Connected -->
+<div>
+<h4 class="text-xs font-bold text-[#2d8b44] uppercase tracking-wider mb-4">Stay Connected</h4>
+<ul class="space-y-2.5 text-xs text-gray-600 font-medium">
+<li class=""><a class="hover:text-[#0c381e] transition-colors" href="index.html">Instagram</a></li>
+<li class=""><a class="hover:text-[#0c381e] transition-colors" href="index.html">Tiktok</a></li>
+<li class=""><a class="hover:text-[#0c381e] transition-colors" href="index.html">Facebook</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright Line -->
+<div class="border-t border-gray-100 pt-8 text-center text-[11px] font-semibold text-gray-400">
+          © 2026 Failda Matcha. All rights reserved.
+        </div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</div></body></html>

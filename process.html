@@ -1,0 +1,720 @@
+<!DOCTYPE html><html lang="en"><head><title>Failda Matcha - Production Process</title><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-dim": "#dadad8",
+          "on-tertiary-fixed-variant": "#3f4944",
+          "tertiary-fixed": "#dbe5de",
+          "inverse-primary": "#a4d1b0",
+          "inverse-surface": "#2f3130",
+          "surface-variant": "#e2e3e0",
+          "surface-bright": "#f9f9f7",
+          "secondary": "#1e6c27",
+          "tertiary-fixed-dim": "#bfc9c2",
+          "on-tertiary": "#ffffff",
+          "on-error": "#ffffff",
+          "on-tertiary-fixed": "#151d19",
+          "on-tertiary-container": "#919b95",
+          "on-secondary-fixed": "#002204",
+          "on-error-container": "#93000a",
+          "on-background": "#1a1c1b",
+          "on-primary-fixed-variant": "#264f36",
+          "on-secondary-fixed-variant": "#005313",
+          "on-primary-container": "#78a284",
+          "error": "#ba1a1a",
+          "secondary-fixed-dim": "#8ad985",
+          "primary": "#002110",
+          "outline-variant": "#c1c8c0",
+          "on-primary-fixed": "#00210f",
+          "surface-container-low": "#f4f4f1",
+          "surface-container": "#eeeeec",
+          "on-secondary": "#ffffff",
+          "background": "#f9f9f7",
+          "error-container": "#ffdad6",
+          "on-surface-variant": "#414942",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-highest": "#e2e3e0",
+          "primary-container": "#0e3821",
+          "primary-fixed": "#c0edcb",
+          "surface-container-high": "#e8e8e6",
+          "inverse-on-surface": "#f1f1ee",
+          "primary-fixed-dim": "#a4d1b0",
+          "surface": "#f9f9f7",
+          "on-secondary-container": "#24712b",
+          "secondary-container": "#a2f39c",
+          "outline": "#727972",
+          "tertiary-container": "#2a332f",
+          "surface-tint": "#3e674c",
+          "tertiary": "#151e1a",
+          "on-surface": "#1a1c1b",
+          "secondary-fixed": "#a5f69f",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-2xl": "4rem",
+          "space-xl": "2.5rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "margin-mobile": "1.25rem",
+          "space-3xl": "6rem",
+          "margin": "3rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Space Grotesk"
+          ],
+          "label-sm": [
+            "Space Grotesk"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Space Grotesk"
+          ],
+          "headline-lg": [
+            "Space Grotesk"
+          ],
+          "label-lg": [
+            "Space Grotesk"
+          ],
+          "headline-sm": [
+            "Space Grotesk"
+          ],
+          "headline-xl": [
+            "Space Grotesk"
+          ],
+          "headline-xl-mobile": [
+            "Space Grotesk"
+          ],
+          "headline-lg-mobile": [
+            "Space Grotesk"
+          ]
+        },
+        "fontSize": {
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "400"
+            }
+          ],
+          "label-md": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.1em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "12px",
+              "letterSpacing": "0.12em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "22px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "label-lg": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "56px",
+            {
+              "lineHeight": "60px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-xl-mobile": [
+            "36px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1440px] mx-auto px-margin flex items-center justify-between"><a class="flex items-center gap-3 group" data-path="home" href="index.html"><div class="w-7 h-7 bg-primary-container flex items-center justify-center"><div class="w-3 h-3 bg-secondary-fixed rotate-45 transition-transform duration-300 group-hover:rotate-90"></div></div><span class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase">FAILDA MATCHA</span></a><nav class="hidden md:flex items-center gap-10" data-active-classes="text-primary font-bold border-b border-primary pb-0.5"><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors tracking-widest uppercase" data-path="home" href="index.html">HOME</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors tracking-widest uppercase" data-path="product" href="products.html">PRODUCT</a><a aria-current="page" class="transition-colors tracking-widest uppercase text-primary font-bold border-b border-primary pb-0.5" data-path="process" href="process.html">PROCESS</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors tracking-widest uppercase" data-path="about" href="about.html">ABOUT</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors tracking-widest uppercase" data-path="blog" href="blog.html">BLOG</a></nav><div class="flex items-center gap-5"><button aria-label="Search" class="w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Shopping Cart" class="w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 bg-primary text-on-primary font-label-sm text-[9px] flex items-center justify-center rounded-full leading-none">2</span></button><a class="hidden sm:inline-flex items-center justify-center bg-primary-container hover:bg-tertiary-container text-on-primary font-label-md text-label-md uppercase tracking-widest px-7 py-3 transition-colors" data-path="product" href="products.html">SHOP NOW</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO INTRO SECTION -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary">
+<!-- Atmospheric Ambient Background Graphic -->
+<div class="absolute inset-0 opacity-15 pointer-events-none mix-blend-screen">
+<div class="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full bg-secondary blur-3xl"></div>
+<div class="absolute bottom-0 right-10 w-[500px] h-[500px] rounded-full bg-secondary-fixed blur-3xl"></div>
+</div>
+<div class="relative max-w-[1440px] mx-auto px-margin pt-space-3xl pb-space-3xl">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-10">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface/10 text-secondary-fixed mb-6">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">AUTHENTIC CRAFTSMANSHIP • KYOTO, JAPAN</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-primary uppercase tracking-tight leading-[1.05] mb-6">
+            From Kyoto Farms <br>
+<span class="text-secondary-fixed">To Your Daily Ritual</span>
+</h1>
+<p class="font-body-lg text-body-lg text-tertiary-fixed max-w-xl">
+            The artisanal 6-step journey of ceremonial leaves grown in the mineral soils of Uji and Wazuka. Pure, slow-ground, meditative vitality in every single gram.
+          </p>
+</div>
+<!-- Quick Data Panel -->
+<div class="grid grid-cols-3 gap-6 bg-primary-container p-6 w-full lg:w-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">HARVEST</span>
+<span class="font-headline-md text-headline-md text-on-primary">1st Flush</span>
+<span class="font-body-sm text-body-sm text-outline-variant">Ichibancha only</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">GRIND SPEED</span>
+<span class="font-headline-md text-headline-md text-on-primary">35g / hr</span>
+<span class="font-body-sm text-outline-variant">Granite stone mill</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">TERROIR</span>
+<span class="font-headline-md text-headline-md text-on-primary">Uji River</span>
+<span class="font-body-sm text-outline-variant">Kyoto Prefecture</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- STEP-BY-STEP PRODUCTION TIMELINE SECTION -->
+<section class="w-full bg-surface-bright py-space-3xl">
+<div class="max-w-[1440px] mx-auto px-margin">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl">
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-2">METICULOUS DISCIPLINE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight">
+            The 6 Stages of Failda Pure Matcha
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-4 md:mt-0">
+          Unlike ordinary powdered green tea, authentic ceremonial matcha demands strict agricultural discipline, precise steam arresting, and time-honored slow grinding.
+        </p>
+</div>
+<!-- Step Cards - Asymmetric Editorial Flow -->
+<div class="space-y-12">
+<!-- STEP 01 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container-lowest p-8 lg:p-12 shadow-sm">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-headline-lg text-headline-lg text-secondary/30">01</span>
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-fixed px-3 py-1 uppercase tracking-widest">25 Days Before Harvest</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+              Tana Canopy Shading
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Nearly four weeks before the spring pluck, traditional black reed screens (tana) canopy the tea bushes, filtering out up to 90% of direct sunlight. Denied direct rays, the Camellia sinensis plant pumps intense amounts of chlorophyll and umami-rich L-theanine into its leaves, eliminating astringency and yielding that signature brilliant jade hue.
+            </p>
+<div class="flex items-center gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Sunlight Block</span>
+<span class="font-headline-sm text-headline-sm text-primary">85% – 90%</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Key Phytochemical</span>
+<span class="font-headline-sm text-headline-sm text-primary">L-Theanine</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Scenic landscape of Japanese tea fields under dark shading tana canopies on rolling hills in Kyoto with mist rising at early dawn, rich verdant green leaves glowing softly beneath the thatched covers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpbuiFs3orFmz_nMtMFTJaX9dUqqVDrE5SytDm4sW1czujWab9ic7c5dvUZ_Ev04gzNRUgHoJUQ-x2tKVMeRpmr_Uur-aro7Vft2bK9D1vBWWHRsneT38lyGaBumcuTQ0Y2ozEmWqddl2PTgHkr3aMpr8wuSF3IT7fF9PFTpvv1z7EzuZ7OpuvFnezfuVd2jYweSz5Rt3Dcr4pVXDP0B13gmbc1TSrvMq4mNoy0CoSsZvcBt8w81A">
+<span class="absolute bottom-4 right-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase tracking-wider">Wazuka Valley Fields</span>
+</div>
+</div>
+</div>
+<!-- STEP 02 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container-lowest p-8 lg:p-12 shadow-sm">
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Extreme macro close-up of a tea farmer's hands tenderly plucking the top two brightest green young tea leaves and soft bud during the first spring flush harvest in Kyoto Japan, morning dew on leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL6h9gD7Mrgm9dkRVNhCiNfSf0o8bcSsE-gW4YCDHXUdtjwnW3JZWrsGmfsR-9fen38uQNNolBv4FnQ751MZO4xxjyXHzVecJDfoNFBK-B1R0J1EVjl9Qq0UgsdWtBPNw6Ixy-xSL4F56fEOix2r69Ia8Mz357JrFk2xo590W6pzu-GWc74tK6vjg6UHhb6v6AEIHKQKnHXM03_2qEyzSJnl_6Vken22Wj5xEahbEFo0EI9S7U-Qc">
+<span class="absolute bottom-4 left-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase tracking-wider">Ichibancha (First Flush)</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-headline-lg text-headline-lg text-secondary/30">02</span>
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-fixed px-3 py-1 uppercase tracking-widest">Early May Plucking</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+              Selective First Flush Hand-Harvest
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              We exclusively harvest "Ichibancha" — the virgin spring crop containing the highest nutrient density of the entire year. Master pickers examine every branch to snap only the two youngest, tenderest crown shoots and bud, leaving coarser, bitter lower leaves behind.
+            </p>
+<div class="flex items-center gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Harvest Selection</span>
+<span class="font-headline-sm text-headline-sm text-primary">Top 2 Leaves Only</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Harvest Season</span>
+<span class="font-headline-sm text-headline-sm text-primary">May (Once Annually)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 03 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container-lowest p-8 lg:p-12 shadow-sm">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-headline-lg text-headline-lg text-secondary/30">03</span>
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-fixed px-3 py-1 uppercase tracking-widest">Within 4 Hours of Harvest</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+              Precise Steam De-Enzyming
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              To prevent enzymatic fermentation and browning, fresh leaves undergo flash steaming within hours of plucking. For 15 to 20 seconds, gentle pressurized steam halts oxidation, permanently locking in the vibrant emerald tone, fresh grassy aroma, and potent polyphenol antioxidants.
+            </p>
+<div class="flex items-center gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Steam Exposure</span>
+<span class="font-headline-sm text-headline-sm text-primary">15 – 20 Seconds</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Oxidation Level</span>
+<span class="font-headline-sm text-headline-sm text-primary">0% Preserved</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Inside an artisanal Japanese tea processing workshop with soft clean white steam billowing gently around glowing green leaves tumbling inside polished stainless steam cylinders, atmospheric warm illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCevVuQeolRpWy6sdW7wrvXgykyYQ8WjDfqZ0tqb2ecbRVpZn2hyzmxu9nh1AxoFT7LPc5TZecqARynl9potMvCIZmqNEJriR9VatNol6APrvwBZvqSkm1VOyBkILSYeoHp3IPUZqa9jJIjLmsA60sXEJMZ2tNmYz0RzRMIskrUkuUA4yq4JiQ2t8NT4QJoLvxbdA5XDH7Cj1QJ8X-NcM8t5l98K9JRoJJapIszkTkwpqjWbeJIwqw">
+<span class="absolute bottom-4 right-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase tracking-wider">Kyoto Steam Facility</span>
+</div>
+</div>
+</div>
+<!-- STEP 04 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container-lowest p-8 lg:p-12 shadow-sm">
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Delicate dried dark green flakes of tencha tea leaf meat without stems sitting in a traditional hand-woven bamboo basket, high texture crisp editorial overhead lighting on natural timber surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCjGjjTNzCT1_Pfu1maJLiGyqNnyPdggtuYChkHfE-WMg-CdRc4-rhEACMvJBLyIkkuL4kwoMjp_PnNlT_i3JPfI6cVMIaFFE1SGX7NnVDQmLXb1DHXRDK31_SE4CCtoNuv-w91YlxNH3XdEznOLZqO7oX6_cEO6wmGCE2t-8jnrT0qgHTwLhGwqdolK137SJyUOkcs3alHUvZDkL7oEFC8Wp2JWgmrFyf6gKmc77eqwAYeaqt6R8">
+<span class="absolute bottom-4 left-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase tracking-wider">Pure Tencha Flakes</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-headline-lg text-headline-lg text-secondary/30">04</span>
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-fixed px-3 py-1 uppercase tracking-widest">Aero-Separation</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+              Drying &amp; Tencha De-veining
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              The steamed leaves are cooled with air jets and transported through multi-stage gentle dryers. Next comes the painstaking winnowing process: veins and tough fibrous stems are cleanly separated, retaining strictly the soft leaf flesh known as "Tencha".
+            </p>
+<div class="flex items-center gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Fibrous Veins</span>
+<span class="font-headline-sm text-headline-sm text-primary">100% Removed</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Material Form</span>
+<span class="font-headline-sm text-headline-sm text-primary">Crisp Tencha</span>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 05 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container-lowest p-8 lg:p-12 shadow-sm">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-headline-lg text-headline-lg text-secondary/30">05</span>
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-fixed px-3 py-1 uppercase tracking-widest">Mikage Stone Mill</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+              Granite Stone-Grinding
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Industrial high-speed blade mills generate friction heat that scorches the matcha's delicate notes. Failda adheres strictly to authentic granite mills, slowly revolving at room temperature. Each mill takes an entire hour to produce just 35 grams of micron-fine powder (5 to 10 microns), velvety as talc.
+            </p>
+<div class="flex items-center gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Production Speed</span>
+<span class="font-headline-sm text-headline-sm text-primary">35 Grams / Hour</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Powder Fineness</span>
+<span class="font-headline-sm text-headline-sm text-primary">5 - 10 Microns</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Close up of a traditional heavy dark granite stone mill slowly grinding tencha into micro-fine vibrant jade green matcha powder swirling on the stone grooves in an artisan Kyoto tea atelier, soft directional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnd5phLy4iV86Df68_-vtInbdvCt0MfkhBJyTr8Y2YVIIaLTqUjlsuSNjG0_4CYl9Lfvl-ZC1DQ5Er7EAotCmJKlmIb1CzHKkaswcXFBD5P9QgfUu1xSY7Sni66hcAlZJoywBOPwVy8s_kX0bRhMND3MkpDTHw1PwAQTu_MpipWQN-gI1oYoaG171r9Y7ddOHmzjZnDzolurWu7cvMUVTPAv1G1-YE90Mr0FgX7o0IMCyTjGzao8I">
+<span class="absolute bottom-4 right-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase tracking-wider">Granite Mikage Mill</span>
+</div>
+</div>
+</div>
+<!-- STEP 06 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center bg-surface-container-lowest p-8 lg:p-12 shadow-sm">
+<div class="lg:col-span-7">
+<div class="relative overflow-hidden aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Matte silver hermetic aluminum tins and minimalist tea pouches filled with ultra-vibrant green matcha powder on a clean cedar wood laboratory tasting bench with testing spoons and glass beakers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtJ725UPOHNmWgBtrjU1GIGNZYrvZ8dABkci0Oqldl5kgMdJUoQ4ctdrFIXqZ8N8CuCx4I_T2ZJvD3UJyzzBrCNlCQgUORacx1cGnOx-rdovQ7fhHqN-Y0DwgA5y0dEh0rfx0x24lz2Ffy3JKmHf2sHTmNbDb2XBC6u8yTX8P6T7LKZyqD8azKQZTAhdyLLnxqPET8pywsT9fcHpLG6JjBTbCpSyjeRvMKcB8jYqKqc9EJQEX8mcI">
+<span class="absolute bottom-4 left-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase tracking-wider">Certified Cleanroom</span>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="flex items-center gap-3 mb-4">
+<span class="font-headline-lg text-headline-lg text-secondary/30">06</span>
+<span class="font-label-md text-label-md bg-secondary-container text-on-secondary-fixed px-3 py-1 uppercase tracking-widest">Sealed In Origin</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+              Nitrogen Flushing &amp; Lab Verification
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+              Every single batch is independently tested for heavy metals, radiation, and microbiological purity. Immediate hermetic sealing in food-grade aluminum tins with inert nitrogen displacement shields the matcha against ultraviolet radiation and moisture degradation.
+            </p>
+<div class="flex items-center gap-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Preservation</span>
+<span class="font-headline-sm text-headline-sm text-primary">Nitrogen Sealed</span>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase block">Purity Standard</span>
+<span class="font-headline-sm text-headline-sm text-primary">JAS &amp; USDA Organic</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ORIGIN TERROIR & GEOGRAPHY SECTION -->
+<section class="w-full bg-surface-container-low py-space-3xl">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-2">GEOGRAPHIC PROVENANCE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-6">
+            The Foggy Valleys of Uji &amp; Wazuka
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+            Nestled along the gentle bends of the Uji River in southern Kyoto, our contracted family farms benefit from an irreplaceable microclimate: frequent morning river mist, extreme day-to-night temperature differentials, and mineral-packed volcanic loam.
+          </p>
+<div class="space-y-4 mb-8">
+<div class="p-4 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">ELEVATION &amp; CLIMATE</span>
+<p class="font-body-sm text-body-sm text-on-surface">350m above sea level with frequent mountain fog blankets providing natural ultraviolet protection.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">SOIL COMPOSITION</span>
+<p class="font-body-sm text-body-sm text-on-surface">Well-draining, slightly acidic sediment rich in organic composted leaf mulch and granite minerals.</p>
+</div>
+<div class="p-4 bg-surface-container-lowest">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider block mb-1">FARM HERITAGE</span>
+<p class="font-body-sm text-body-sm text-on-surface">5th-generation family growers partnering exclusively with Failda under sustainable regenerative commitments.</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-3 text-primary font-label-md text-label-md uppercase tracking-widest hover:text-secondary transition-colors" data-path="product" href="products.html">
+            Explore Single-Estate Tins <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-6 shadow-sm">
+<div class="w-full h-[460px] bg-cover bg-center" data-location="Uji, Kyoto Prefecture, Japan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjOcHvHaCHQWrVQv1nnXbLU4BcB1KcEVoHKGnpU_F-PND494EvgIinIKggfgCWQ8mnN56L9BWyTRm1PFziFFCtSIIZTjiEoiQuhXLHGwL6Ys0NQUFX6Sph6sRIb5qMT-5RJtClUCuyUpctRKgZ1rmZsfBeex5fMX_TFMsP_VQHR-wX7rKAVGu5Sp5EH46RM2RDa5lNuAG3DiUjIGU15gCp2juYqCa1GQr19jMoD8upcRlNLcwN0no')"></div>
+<div class="flex items-center justify-between pt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">pin_drop</span>
+<span class="font-label-md text-label-md text-primary uppercase">Kyoto Prefecture • 34.8841° N, 135.8055° E</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-variant px-3 py-1 text-on-surface uppercase">Single Estate Coordinates</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- TOOLS OF THE RITUAL SHOWCASE -->
+<section class="w-full bg-primary-container text-on-primary py-space-3xl">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-widest block mb-2">SACRED EQUIPMENT</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary uppercase tracking-tight mb-4">
+          The Four Tools of the Ritual
+        </h2>
+<p class="font-body-md text-body-md text-outline-variant">
+          Handcrafted from organic bamboo and ceramic stone, each instrument plays an essential functional role in unlocking creamy texture and delicate aromatic bouquets.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- TOOL 1 -->
+<div class="bg-primary/60 p-6 flex flex-col justify-between group transition-all duration-300 hover:bg-primary">
+<div>
+<div class="aspect-square bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Handcrafted traditional Japanese bamboo matcha whisk Chasen with 100 delicate curved tines isolated on dark moody slate texture background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF48-SwOPcX1BWq9upOWmpDRc1qXMDL5xjGu36ErN5jyzc_1yeDZfJpfFpEuHmHGYZVeQtioIj3iErpNBbXwzCHneTVIMO1L7aR02TBMxMJUM0iL-LP9_jf-NJZIlKb3f4ustBAL6AOS5U-LrTOg0P9u-JoxZNw5AQduWnL4g-AZfmZzmKC6CUMvoUckT-eI3yFgSS4JL6i2RHo-lpH2ONMPV-tpjFPg7zYMYswZ063jq3Ayr8ULA">
+<span class="font-label-sm text-label-sm bg-primary text-secondary-fixed px-2 py-1 absolute top-3 left-3 uppercase">100-Prong Whisk</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary uppercase mb-2">Chasen (Whisk)</h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-6">
+              Split from a single piece of seasoned white bamboo. The hundred curved tines effortlessly incorporate air into the liquor, generating velvety micro-foam.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Organic White Bamboo</span>
+</div>
+<!-- TOOL 2 -->
+<div class="bg-primary/60 p-6 flex flex-col justify-between group transition-all duration-300 hover:bg-primary">
+<div>
+<div class="aspect-square bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional bent bamboo matcha scoop Chashaku resting beside vivid green matcha powder on a clean minimalist wooden tea mat, studio product photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe5dF7LOFdlCu5hVFNbfb-djfMoqjR2rFV3L06_0MRbEAUhkjeaoksLJH6HQ7Gdpmh-l2VF4_IHIf13nPk5nKd0F2KMKpDNIipF06SDc-belfD7XC304sOhC_RBUjZvIfPTOnh1vT0Q0J56TYMV4h_a2RvKXQ0rTezevoFlbh6e--Sb4MzZ94XI1q2AbqG3Ff9Xf8eRsqHuJPOjUf27El-b_I20Q7dCtIOBaG6Vkh2mFnw6RpJTK8">
+<span class="font-label-sm text-label-sm bg-primary text-secondary-fixed px-2 py-1 absolute top-3 left-3 uppercase">Exact Dose</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary uppercase mb-2">Chashaku (Scoop)</h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-6">
+              Steam-bent bamboo scoop measured precisely to dispense 1 gram of powder per curve. Two scoops yield the ideal ceremonial single serving.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Steam-Formed Bamboo</span>
+</div>
+<!-- TOOL 3 -->
+<div class="bg-primary/60 p-6 flex flex-col justify-between group transition-all duration-300 hover:bg-primary">
+<div>
+<div class="aspect-square bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Artisanal ceramic matcha bowl Chawan with hand-thrown wabi-sabi uneven organic rim and dark green earthy glaze, studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-m7OVHaSB-r5nZoQ0t2cxgTT_WQ64vFQimFCTUgECizacVF7cwKtIieC3GP_sPpQwuAy_SKj9jwp78OCOW3U3ZVFLoyy2xdqxNYJIerHTKthP7aDZDb004Icg4DVytX8eeLJyARFV2I_LzfBQJqk-qLxzakB3HtZCfTDbumKz8HbL9Fv_POrLVnN6jv-li2FFJ7l4lobjyUi4o1k6KxYaW7kyaSO3TyzrzLhINFwV257qmdA-Jw">
+<span class="font-label-sm text-label-sm bg-primary text-secondary-fixed px-2 py-1 absolute top-3 left-3 uppercase">Stoneware</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary uppercase mb-2">Chawan (Bowl)</h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-6">
+              Hand-thrown stoneware bowl with a wide flat base and textured interior that supports vigorous whisking without splashing or cooling the water.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Shigaraki Clay Ceramic</span>
+</div>
+<!-- TOOL 4 -->
+<div class="bg-primary/60 p-6 flex flex-col justify-between group transition-all duration-300 hover:bg-primary">
+<div>
+<div class="aspect-square bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Fine stainless steel mesh tea sifter Furui with pure bright green matcha powder falling gently like emerald dust onto a white ceramic surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrQlJ_qEXfqRj2vD55pTDTMHs4Ny5mtw9ng_HM-s7O-Gy9lv3jaJpXy_UpTLGC7Ch7txiIy0sKFesQ1KwIIS6sG5vtLoNWRgr6pX4B2WZ_qsgrvGt_UHJpazc0C3Pp8jli-8ZKOQ6qVXIzLOmCxRgddDimNQPQXMG5YOh0T4S86D2l8V98Fe4cowPFr2Rq69MAanf1GLEsTv954s2wvO7Ns0UN99nVKIJKV1dA3Xkh3iVBma3YJqs">
+<span class="font-label-sm text-label-sm bg-primary text-secondary-fixed px-2 py-1 absolute top-3 left-3 uppercase">Lump-Free</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary uppercase mb-2">Furui (Sifter)</h3>
+<p class="font-body-sm text-body-sm text-outline-variant leading-relaxed mb-6">
+              Precision fine-mesh sifter eliminating static and air-bound clumpiness, guaranteeing a mirror-smooth dissolve into warm water.
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Stainless 80-Mesh</span>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-flex items-center justify-center bg-secondary-fixed hover:bg-secondary text-on-secondary-fixed font-label-md text-label-md uppercase tracking-widest px-8 py-4 transition-colors" data-path="product" href="products.html">
+          View Complete Ceremonial Toolkits
+        </a>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE HOW TO PREPARE GUIDE -->
+<section class="w-full bg-surface-bright py-space-3xl">
+<div class="max-w-[1440px] mx-auto px-margin">
+<div class="max-w-2xl mb-space-2xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest block mb-2">DAILY PRACTICE</span>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase tracking-tight mb-4">
+          How to Whisk Perfection at Home
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Follow our classic master recipe for Usucha (thin tea). Three mindful minutes that completely center your morning focus.
+        </p>
+</div>
+<!-- Step-by-Step Interactive Tabs / Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-2xl">
+<!-- GUIDE 1 -->
+<div class="bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div>
+<span class="font-headline-md text-headline-md text-secondary/30 mb-2 block">Step 01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Sift The Powder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Measure 2 scoops (approx 2 grams) with your Chashaku and gently press through the Furui mesh directly into your pre-warmed Chawan bowl.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-low p-3">
+<span class="font-label-sm text-label-sm text-primary font-bold block">TARGET METRIC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2.0 grams sifted powder</span>
+</div>
+</div>
+<!-- GUIDE 2 -->
+<div class="bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div>
+<span class="font-headline-md text-headline-md text-secondary/30 mb-2 block">Step 02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Temperature Control</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Pour 60 to 70 ml of soft spring water heated strictly to 75°C - 80°C (167°F - 176°F). Boiling water burns delicate amino acids and causes bitterness.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-low p-3">
+<span class="font-label-sm text-label-sm text-primary font-bold block">TARGET METRIC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">75°C - 80°C / 60ml Water</span>
+</div>
+</div>
+<!-- GUIDE 3 -->
+<div class="bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div>
+<span class="font-headline-md text-headline-md text-secondary/30 mb-2 block">Step 03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">The "W" Motion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Hold the Chasen lightly with your fingers. Whisk quickly from the wrist in an energetic back-and-forth "W" or "M" motion without pressing into the bowl bottom.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-low p-3">
+<span class="font-label-sm text-label-sm text-primary font-bold block">TARGET METRIC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">20 seconds rapid wrist whisking</span>
+</div>
+</div>
+<!-- GUIDE 4 -->
+<div class="bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary"></div>
+<div>
+<span class="font-headline-md text-headline-md text-secondary/30 mb-2 block">Step 04</span>
+<h3 class="font-headline-sm text-headline-sm text-primary uppercase mb-3">Surface Polish</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+              Slow down and lightly trace the surface foam in a slow circular swirl to break large air bubbles into uniform jade micro-foam. Sip immediately.
+            </p>
+</div>
+<div class="pt-4 bg-surface-container-low p-3">
+<span class="font-label-sm text-label-sm text-primary font-bold block">TARGET METRIC</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dense creamy jade crema</span>
+</div>
+</div>
+</div>
+<!-- Video / Motion Preview Module -->
+<div class="bg-surface-container-lowest p-8 lg:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6">
+<div class="relative aspect-video bg-surface-container overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial close up of a bamboo chasen whisk creating rich emerald green foam in a handcrafted ceramic bowl with small micro bubbles on top, soft light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIb-i3Uk1OVUSdLYx2uoXLVO0Ic_RZW33SMpNaxaYbcUb3yRG-PRy_8cdl3jq_8hAMW-Z9tBjCLpuR1mhOEJHD38VumA01K-4QAkE1kllpRVHgr04fZ-jq0S7XZg_zxLKXz7Oxyi19bcGg9HP73MWeqPg56KHYXCtqr-cjsVCvVOnUyaBFLaRBHMQAd4Tz6r7uIUoSAWPMfYQnOqDACs1V1DzQIgj9wR_-LhRHZi76anpex3sIZT4">
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-on-primary flex items-center justify-center text-primary shadow-lg cursor-pointer hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[32px] ml-1">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-4 left-4 bg-primary text-on-primary font-label-sm text-label-sm px-3 py-1 uppercase">Watch Ritual Video (2:15)</span>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Master Tea Sommelier Note</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary uppercase mb-4">
+            "The froth is not merely aesthetic—it aerates the volatile aromatic compounds, releasing fresh floral umami."
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Kenjiro Takahashi, 5th-generation tea master at Failda's partner estate in Uji. Preparing matcha is a daily meditation: slow down, breathe, and greet the green elixir.
+          </p>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest px-6 py-3 hover:bg-primary-container transition-colors" data-path="blog" href="blog.html">
+              Read Brewing Guides
+            </a>
+<a class="inline-flex items-center justify-center bg-transparent border-none text-primary hover:text-secondary font-label-md text-label-md uppercase tracking-widest px-4 py-3 transition-colors" data-path="product" href="products.html">
+              Starter Kits →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA CONVERSION BANNER -->
+<section class="w-full bg-primary text-on-primary py-space-3xl relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+<div class="relative max-w-[1440px] mx-auto px-margin text-center">
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-widest block mb-4">FRESH SPRING FLUSH AVAILABLE</span>
+<h2 class="font-headline-xl text-headline-xl text-on-primary uppercase tracking-tight max-w-3xl mx-auto mb-6">
+        Experience The Craft <br>
+<span class="text-secondary-fixed">In Every Single Sip</span>
+</h2>
+<p class="font-body-lg text-body-lg text-tertiary-fixed max-w-xl mx-auto mb-8">
+        Freshly stone-ground in Kyoto and flown directly under hermetic seal. Elevate your everyday morning consciousness with genuine ceremonial grade.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-secondary-fixed hover:bg-secondary text-on-secondary-fixed font-label-md text-label-md uppercase tracking-widest px-8 py-4 transition-colors" data-path="product" href="products.html">
+          Shop Fresh Harvest
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center bg-primary-container hover:bg-tertiary-container text-on-primary font-label-md text-label-md uppercase tracking-widest px-8 py-4 transition-colors" data-path="home" href="index.html">
+          Return To Home
+        </a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low"><div class="max-w-[1440px] mx-auto px-margin pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter mb-space-3xl"><div class="lg:col-span-4"><div class="flex items-center gap-3 mb-6"><div class="w-8 h-8 bg-primary-container flex items-center justify-center"><div class="w-3.5 h-3.5 bg-secondary-fixed rotate-45"></div></div><span class="font-headline-sm text-headline-sm tracking-tight text-primary uppercase">FAILDA MATCHA</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-8 leading-relaxed">Premium Ceremonial Kyoto Matcha, crafted for your daily energy and mindfulness.</p><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Single Origin Uji, Kyoto</span></div></div><div class="lg:col-span-2"><h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Shop</h3><ul class="space-y-4"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="product" href="products.html">Matcha Powder</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="product" href="products.html">Tools Matcha</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="product" href="products.html">Gift Sets</a></li></ul></div><div class="lg:col-span-2"><h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Discover</h3><ul class="space-y-4"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">Profile</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">About Us</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">Ingredients &amp; Scents</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">How To Prepare Matcha</a></li></ul></div><div class="lg:col-span-2"><h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Support</h3><ul class="space-y-4"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">FAQ</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">Shopping &amp; Returns</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">Contact Us</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="process" href="process.html">Track Your Order</a></li></ul></div><div class="lg:col-span-2"><h3 class="font-label-md text-label-md text-primary uppercase tracking-widest mb-6">Stay Connected</h3><ul class="space-y-4"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[16px]">photo_camera</span>Instagram</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[16px]">play_circle</span>Tiktok</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[16px]">public</span>Facebook</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-4"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">© 2026 Failda Matcha. All rights reserved.</span><div class="flex items-center gap-6"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Privacy Policy</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Terms of Service</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ceremonial Grade</span></div></div></div></footer></body></html>
